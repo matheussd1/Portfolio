@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;1,6..12,300&display=swap" rel="stylesheet">
     <title>Projetos</title>
 </head>
 <body>
@@ -12,17 +15,19 @@
     <div class="moldura">
 
         <video autoplay muted loop>
-            <source src="/documents/BackgroundVideo.mp4" type="video/mp4">
+            <source src="documents/BackgroundVideo.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
 
-        <div class="conteudo">
+        <div class="grid-conteudo">
             <header>
-                <h1>Matheus Dias</h1>
-                <p>Desenvolvedor e Designer</p>
+                <div class="titulo">
+                    <h1 class="nome">Matheus Dias</h1>
+                    <p>Desenvolvedor e Designer</p>
+                </div>
             </header>
-
-            <main>
+ 
+            <main class="principal">
                 <section class="links">
                     <nav>
                         <ul class="sembolinha">
@@ -33,10 +38,28 @@
                         </ul>
                     </nav>
                 </section>
+
+                <section class="row">
+                    <a href="https://github.com/matheussd1/Apollo11" target="_blank">
+                        <div class="card">
+                            <img src="documents/projetoapi.jpeg" alt="projeto API">
+                            <h3>Projeto Api</h3>
+                            <p>Ferramenta de gerenciamento de atestados e equipes</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/matheussd1/Portfolio" target="_blank">
+                        <div class="card">
+                            <img src="documents/portfolio.jpeg" alt="Portfólio">
+                            <h3>Portfólio</h3>
+                            <p>Portfólio em HTML e CSS</p>
+                        </div>
+                    </a>
+                </section>
             </main>
     
             <footer>
-                <p>Matheus Dias 2025 </p>
+                <p>Matheus Dias 2025</p>
             </footer>
         </div>
 
