@@ -7,12 +7,19 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }
 
+/* moldura de todas as páginas */
 .moldura {
     position: relative;
-    display: flex;
-    justify-content: center;
+    display: grid;
     width: 100vw;                     
     max-width: 1200px;                
     height: 90vh;                   
@@ -32,26 +39,130 @@ html, body {
     z-index: 0;
 }
 
-.conteudo {
+.grid-conteudo {
     position: relative;
     z-index: 1;
     color: white;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    text-align: center;
     padding: 10px;
+    display: grid;                            
+    grid-template-rows: auto 1fr auto;        
+    height: 100%;                             
+    box-sizing: border-box;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto auto auto;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* remover "bolinha" das listas */
 .sembolinha {
     list-style: none;
     padding: 0;
 }
 
+.links{
+    margin-top: 60px;
+    line-height: 1.5em;
+}
+
+/* links */
 a {
+    display: inline-block;
     color: white;
     text-decoration: none;
-    transition: color 0.4s ease;
+    transition: transform 0.4s ease-in-out;
 }
 
 a:hover{
     color: rgb(143, 143, 143);
+    transform: scale(1.05);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.card {
+    width: 300px;
+    height: 275px;
+    background-color: #1d1e22;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px rgba(22, 22, 22, 0.5);
+    padding: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    line-height: 1.2;
+}
+
+.card img {
+    width: 96%;
+    height: 60%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 9px;
+    margin-bottom: 0;
+}
+
+.card p {
+    margin-left: 9px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.2;
+    text-align: start;
+}
+
+.titulo h1 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    
+}
+
+.titulo p {
+    margin-top: 0;
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+.nome {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 300%;
+}
+
+.mainsobremim{
+    text-align: end;
+    margin-left: 715px;
+    margin-right: 10px;
 }
