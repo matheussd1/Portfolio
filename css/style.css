@@ -162,7 +162,7 @@ a:hover{
 }
 
 .mainsobremim{
-    text-align: end;
-    margin-left: 715px;
+    layout: flex;
+    margin-left: 730px;
     margin-right: 10px;
 }
