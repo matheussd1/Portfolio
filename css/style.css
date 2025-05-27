@@ -50,6 +50,39 @@ html, body {
     box-sizing: border-box;
 }
 
+
+/* tutiloo no Header */
+.titulo {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.2;
+    text-align: start;
+}
+
+.titulo h1 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    
+}
+
+.titulo p {
+    margin-top: 0;
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+.nome {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 300%;
+}
+
+
+/* Conteúdo principal da Moldura */
 main {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -59,23 +92,29 @@ main {
   margin-top: 10px;
 }
 
+.mainsobremim{
+    margin-left: 730px;
+    margin-right: 10px;
+}
+
+
+/* Footer */
 footer{
     margin-top: 10px;
     margin-bottom: 0;
 }
 
-/* remover "bolinha" das listas */
-.sembolinha {
-    list-style: none;
-    padding: 0;
-}
-
+/* links */
 .links{
     margin-top: 60px;
     line-height: 1.5em;
 }
 
-/* links */
+.sembolinha {
+    list-style: none;
+    padding: 0;
+}
+
 a {
     display: inline-block;
     color: white;
@@ -88,11 +127,13 @@ a:hover{
     transform: scale(1.05);
 }
 
+
+/* Cards na parte de projetos */
 .row {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .card {
@@ -132,36 +173,25 @@ a:hover{
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.titulo {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    line-height: 1.2;
-    text-align: start;
+
+/* Links na parte de contato */
+.contato {
+    font-size: 17px;
+    margin-top: 55px;
+    margin-left: 300px; 
+    line-height: 2;
 }
 
-.titulo h1 {
-    margin-top: 0;
-    margin-bottom: 4px;
-    
-}
 
-.titulo p {
-    margin-top: 0;
-    margin-left: 4px;
+/* Texto "sobre mim" */
+.caixatexto {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 200px;
+    margin-left: 100px;
+    margin-top: 30px;
     margin-bottom: 10px;
-}
-
-.nome {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 250;
-    font-style: normal;
-    font-size: 300%;
-}
-
-.mainsobremim{
-    margin-left: 730px;
-    margin-right: 10px;
 }
