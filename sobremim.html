@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;1,6..12,300&display=swap" rel="stylesheet">
     <title>Contato</title>
 </head>
 <body>
@@ -12,17 +15,19 @@
     <div class="moldura">
 
         <video autoplay muted loop>
-            <source src="/documents/BackgroundVideo.mp4" type="video/mp4">
+            <source src="documents/BackgroundVideo.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
 
-        <div class="conteudo">
+        <div class="grid-conteudo">
             <header>
-                <h1>Matheus Dias</h1>
-                <p>Desenvolvedor e Designer</p>
+                <div class="titulo">
+                    <h1 class="nome">Matheus Dias</h1>
+                    <p>Desenvolvedor e Designer</p>
+                </div>
             </header>
 
-            <main>
+            <main class="principal">
                 <section class="links">
                     <nav>
                         <ul class="sembolinha">
@@ -33,10 +38,28 @@
                         </ul>
                     </nav>
                 </section>
+
+                <div class="caixatexto">
+                    <p>
+                            Me chamo Matheus sou movido pela arte e tecnologia. Essas paixões moldaram
+                        minha visão de mundo e me conduziram aqui, onde encontrei
+                        um meio de criar, comunicar e transformar ideias em realidade.
+                        <br>   
+                            Atualmente curso Análise e Desenvolvimento de Sistemas na FATEC.
+                        Em um dos projetos mais marcantes da minha trajetória até agora, 
+                        atuei como Product Owner na criação de uma ferramenta web 
+                        desenvolvida com HTML, CSS, Python e Flask.
+                        <br>
+                            Essa experiência me proporcionou
+                        uma compreensão prática do desenvolvimento de software e uma visão de como
+                        o trabalho em equipe é fundamental na área, reforçando minha vontade de seguir
+                        crescendo e me aperfeiçoando cada vez mais.
+                    </p>
+                </div>
             </main>
     
             <footer>
-                <p>Matheus Dias 2025 </p>
+                <p>Matheus Dias 2025</p>
             </footer>
         </div>
 
