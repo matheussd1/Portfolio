@@ -51,7 +51,7 @@ html, body {
 }
 
 
-/* tutiloo no Header */
+/* titulo no Header */
 .titulo {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -146,7 +146,7 @@ a:hover{
     margin-left: 10px;
     margin-right: 10px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .card img {
@@ -165,7 +165,9 @@ a:hover{
 }
 
 .card p {
+    font-size: 16px;
     margin-left: 9px;
+    margin-right: 7px;
 }
 
 .card:hover {
@@ -186,12 +188,39 @@ a:hover{
 /* Texto "sobre mim" */
 .caixatexto {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: justify;
+    text-align: center;
     padding: 5px;
     border-radius: 5px;
     margin-right: 200px;
     margin-left: 100px;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+.linkssobremim {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.rolagem {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+    background-color: #2e2e2e00;
+    width: 60%;
+    height: 50vh;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.rolagem::-webkit-scrollbar {
+  display: none;         
 }
